@@ -41,3 +41,5 @@ done
 killall caffeinate
 killall yes
 exit 0
+
+# github.com/jkbenaim/hs100 script for controlling kasa smarthome shit with CLI. Setup TPlink HS103 later
