@@ -4,7 +4,7 @@ macOS Battery Degredation Script
 Purpose is self-explanatory. It is designed to automate the process of adding battery charge cycles for the purpose of testing degredation. 
 At this stage its mostly-automated but I do still consider it Beta, use at your own risk. 
 
-If you want to use it, do yourself a favor and buy a TP-Link HS103 Smart Plug. it will make life way easier.
+If you want to use it, do yourself a favor and buy a TP-Link HS103 Smart Plug, or any plug from the repo listed below. it will make life way easier.
 
 Script isnt yet made to automatically detect your plugs SSID so just replace that prior to running. The rest should be taken care of, generally. 
 
