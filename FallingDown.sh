@@ -2,6 +2,7 @@
 # Updated Mar 13 2023 10:51 PM EST
 
 echo $(date): Checking for Xcode CLI tools. Needed for later steps.
+# Thanks to github.com/That-Dude for the updated version of the GUI-less Xcode install scriot from github.com/mokagio   
 xcode-select -p &> /dev/null
 if [ $? -ne 0 ]; then
 	xcodecli=1
@@ -16,7 +17,8 @@ else
 fi
 
 cd ~/Desktop
-echo $(date): Downloading Smart Plug control SW to desktop from github.com/jkbenaim/hs100 (thank you jkbenaim!)
+echo $(date): Downloading Smart Plug control SW to desktop from github.com/jkbenaim/hs100
+# Thank you jkbenaim and other members part of that repo for the above!
 git clone https://github.com/jkbenaim/hs100.git
 cd hs100
 echo $(date): Compiling control software
