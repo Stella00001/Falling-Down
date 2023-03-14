@@ -38,7 +38,7 @@ health=$(ioreg -l | awk '$3~/Capacity/{c[$3]=$5}END{OFMT="%.0f";max=c["\"DesignC
 battery=$(pmset -g batt | grep -Eo "\d+%" | cut -d% -f1)
 
 echo $(date): $cores Logical Cores found!
-if [ $battery -gt 10 ] && [ $battery -lt 90 ]; then
+if [ $battery -ge 10 ]; then
 	echo $(date): Battery is partially charged, starting yes to drain, cutting power
 	./switch 192.168.0.1 off
 	seq $cores | xargs -I{} -P $cores yes > /dev/null &
