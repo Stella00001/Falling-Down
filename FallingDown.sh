@@ -12,7 +12,6 @@ if [ $? -ne 0 ]; then
 	echo "Prod: ${PROD}"
         softwareupdate -i "$PROD" --verbose;
 else
-	xcodecli=0
         echo $(date): Xcode CLI tools detected. Skipping install process for it.
 fi
 
@@ -81,11 +80,11 @@ echo $(date): Degrading complete! Performing cleanup.
 killall caffeinate
 killall yes
 echo $(date): all Yes and Caffeinate instances killed.
-if [ $xcodecli -eq 0 ]; then
+if [ $xcodecli -eq 1 ]; then
 	sudo rm -rf /Library/Developer/CommandLineTools
 	echo $(date): Our downloaded Xcode-CLI is now removed
 fi
 networksetup -setnetworkserviceenabled Wi-Fi off && sleep 15 && networksetup -setnetworkserviceenabled Wi-Fi on
-echo $(date): Smart Plugs Wi-Fi network disconnected. 
+echo $(date): Smart Plugs Wi-Fi network disconnected. Should be good to go now! 
  
 exit 0
