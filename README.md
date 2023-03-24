@@ -10,8 +10,8 @@ Script isnt yet made to automatically detect your plugs SSID so just replace tha
 
 TODO:
 - Automatic detection of plugs unique SSID
-- Better Error-checking on some stages
-- Disable Low Power mode at startup
+- Better Error-checking on some stages (In-progress)
+~~- Disable Low Power mode at startup~~
 - Possible display max/min brightness control to speed up process?
 - Ability to toggle between full-auto with smart plug and semi-auto (manual plug/unplug) without smart plug
 - Checking if a smart plug is detected, and if not, switch to semi-auto
