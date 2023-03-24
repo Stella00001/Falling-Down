@@ -10,6 +10,7 @@ Script isnt yet made to automatically detect your plugs SSID so just replace tha
 
 TODO:
 - Automatic detection of plugs unique SSID
+- Detection of dedicated GPU and launching a stress test for that? May help for 15"/16"/17" Intel model and Apple Silicon macs
 - Better Error-checking on some stages (In-progress)
 - ~~Toggle Low Power Mode on/off~~
 - Possible display max/min brightness control to speed up process?
